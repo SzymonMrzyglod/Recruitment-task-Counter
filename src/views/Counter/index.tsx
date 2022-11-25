@@ -1,19 +1,7 @@
 import { FC } from "react";
 import { useCounter } from "../../hooks/useCounter";
-import {
-  CounterMachineActionType,
-  CounterResultProps,
-} from "../../types/counter";
-
-export const CounterResult: FC<CounterResultProps> = ({
-  counter,
-  counterState,
-}) => (
-  <>
-    <h1>{`Counter: ${counter}`}</h1>
-    <h2>{`Counter state: ${counterState}`}</h2>
-  </>
-);
+import { CounterMachineActionType } from "../../types/counter";
+import { CounterResult } from "./CounterResult";
 
 export const Counter: FC = () => {
   const {
